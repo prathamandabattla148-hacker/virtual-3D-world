@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon Parkour 3D</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+    }
+  }
+  </script>
+  <script type="module" src="script.js"></script>
+</head>
+<body>
+  <div id="hud">
+    <h1>NEON PARKOUR</h1>
+    <p>TIME: <span id="time">0.0</span>s</p>
+    <p>CHECKPOINT: <span id="checkpoint">START</span></p>
+    <p>FALLS: <span id="falls">0</span></p>
+  </div>
+
+  <div id="message">REACH THE GREEN PORTAL!</div>
+
+  <div id="start-screen">
+    <div class="panel">
+      <h1>NEON PARKOUR 3D</h1>
+      <p>Jump between rooftops. Avoid falling. Reach the portal!</p>
+      <p class="instructions">
+        WASD — Move | SPACE — Jump<br>
+        SHIFT — Sprint | Mouse — Camera | R — Restart
+      </p>
+      <button id="start-button">START GAME</button>
+    </div>
+  </div>
+</body>
+</html>
