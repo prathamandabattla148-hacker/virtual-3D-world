@@ -1,0 +1,107 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #050816;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+canvas {
+  display: block;
+}
+
+#hud {
+  position: fixed;
+  top: 15px;
+  left: 20px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+#hud h1 {
+  color: #37efff;
+  letter-spacing: 3px;
+  text-shadow: 0 0 15px #00bfff;
+}
+
+#hud p {
+  font-size: 14px;
+}
+
+#message {
+  position: fixed;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  color: #39f5ff;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 0 0 15px #00cfff;
+  pointer-events: none;
+}
+
+#start-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #050816ee;
+  text-align: center;
+}
+
+.panel {
+  width: min(90%, 460px);
+  padding: 30px;
+  border: 1px solid #27dfff;
+  border-radius: 18px;
+  background: #10172c;
+  box-shadow: 0 0 40px #063f70;
+}
+
+.panel h1 {
+  color: #38efff;
+  font-size: 30px;
+}
+
+.instructions {
+  color: #a5d9ff;
+  line-height: 1.8;
+  font-size: 13px;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  background: #35eaff;
+  color: #04101b;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 28px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: white;
+  box-shadow: 0 0 20px #35eaff;
+}
+
+@media (max-width: 600px) {
+  #hud h1 {
+    font-size: 18px;
+  }
+
+  #message {
+    font-size: 18px;
+  }
+
+  .panel h1 {
+    font-size: 24px;
+  }
+}
